@@ -2,7 +2,7 @@
 
 # mac-akko
 
-一个安静的 macOS 菜单栏工具，查看 Akko Alice 键盘的估算电量、控制灯光。
+**Mac-Akko** 是一个安静的 macOS 菜单栏工具，查看 Akko Alice 键盘的估算电量、控制灯光。
 
 - 菜单栏显示估算百分比，面板只展示必要信息。
 - 小灯泡开关、四档亮度、八种动画灯效卡片。
@@ -25,8 +25,8 @@
 
 需要 **Apple Silicon Mac、macOS 14 或更高版本**。
 
-1. 在 [Releases](https://github.com/kafkalm/mac-akko/releases) 下载 ZIP，解压后打开 `mac-akko.app`，也可以放进“应用程序”。
-2. 按应用提示，在“系统设置 → 隐私与安全 → 输入监控”允许 mac-akko，然后重开应用。该权限用于接收键盘专用 HID 回复，代码不记录普通按键。
+1. 在 [Releases](https://github.com/kafkalm/mac-akko/releases) 下载 ZIP，解压后打开 `Mac-Akko.app`，也可以放进“应用程序”。
+2. 按应用提示，在“系统设置 → 隐私与安全 → 输入监控”允许 Mac-Akko，然后重开应用。该权限用于接收键盘专用 HID 回复，代码不记录普通按键。
 3. 点击菜单栏键盘图标。蓝牙且有有效标定时显示估算电量；USB 下可控制灯光。
 
 Release 使用临时签名，没有 Apple 开发者公证；系统可能阻止直接运行。你也可以审阅源码后自行构建。无需关闭系统安全保护。
@@ -57,7 +57,7 @@ Release 使用临时签名，没有 Apple 开发者公证；系统可能阻止�
 
 ```sh
 zsh scripts/build.sh
-open build/mac-akko.app
+open build/Mac-Akko.app
 ```
 
 构建脚本运行内置协议 / 标定测试并验证应用签名。打包发布文件：

@@ -42,7 +42,7 @@ struct BatteryView: View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack(spacing: 7) {
                     Image(systemName: "keyboard").foregroundStyle(.secondary)
-                    Text("mac-akko").font(.system(size: 14, weight: .semibold))
+                    Text("Mac-Akko").font(.system(size: 14, weight: .semibold))
                     Spacer()
                     Circle().fill(lights.connected ? Color.green : Color.secondary.opacity(0.45)).frame(width: 5, height: 5)
                     Text(lights.transportLabel).font(.system(size: 11)).foregroundStyle(.secondary)
@@ -244,7 +244,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         statusItem.button?.target = self
         statusItem.button?.action = #selector(togglePopover)
-        statusItem.button?.image = NSImage(systemSymbolName: "keyboard", accessibilityDescription: "mac-akko 键盘电量")
+        statusItem.button?.image = NSImage(systemSymbolName: "keyboard", accessibilityDescription: "Mac-Akko 键盘电量")
         statusItem.button?.imagePosition = .imageLeading
         popover.behavior = .transient
         popover.delegate = self
